@@ -5,7 +5,7 @@ import { Card, CardSection, Input, Button } from './common';
 
 class LoginForm extends Component {
 	onEmailChange(text){
-		this.props.emailChanged(text); 
+		this.props.emailChanged(text);
 	}
 	render(){
 		return(
@@ -26,7 +26,7 @@ class LoginForm extends Component {
 				</CardSection>
 				<CardSection>
 					<Button>
-						Login
+						Login Here!
 					</Button>
 				</CardSection>
 			</Card>
