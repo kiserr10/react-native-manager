@@ -28,6 +28,9 @@ class LoginForm extends Component {
 					<Button>
 						Login!
 					</Button>
+					<Button>
+						LogOut!
+					</Button>
 				</CardSection>
 			</Card>
 		);
