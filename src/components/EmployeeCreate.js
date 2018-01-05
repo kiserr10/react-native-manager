@@ -8,10 +8,9 @@ class EmployeeCreate extends Component {
 
 	onButtonPress(){
 		const { name, phone, shift } = this.props;
-
 		this.props.employeeCreate({ name, phone, shift: shift || 'Monday' });
 	}
-	
+
 	render() {
 		return (
 			<Card>
