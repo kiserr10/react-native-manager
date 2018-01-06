@@ -1,13 +1,14 @@
 import _ from 'lodash';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { ListView, View, Text } from 'react-native';
+import { ListView } from 'react-native';
 import { employeeFetch } from '../actions';
 import EmployeeListItem from './EmployeeListItem';
 
 class EmployeeList extends Component {
 
 	componentWillMount() {
+		console.log('mounted');
 		this.props.employeeFetch();
 		this.createDataSource(this.props);
 	}
@@ -24,13 +25,17 @@ class EmployeeList extends Component {
 	}
 
 	renderRows(employee){
-		<EmployeeListItem employee={employee}/>;
+		return (
+			<EmployeeListItem employee={employee} />
+		);
 	}
+
 	render(){
 		return (
 			<ListView
-				createDataSource={this.createDataSource}
-				renderRows={this.renderRows()}
+				enableEmptySections
+				dataSource={this.dataSource}
+				renderRow={this.renderRows}
 			/>
 		);
 	}
