@@ -5,8 +5,8 @@ import { employeeUpdate } from '../actions';
 import { Input, CardSection } from './common';
 
 class EmployeeForm extends Component {
-	render(){
-		return(
+	render() {
+		return (
 			<View>
 				<CardSection>
 					<Input
