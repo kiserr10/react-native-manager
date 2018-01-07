@@ -5,7 +5,7 @@ import {
 const INITIAL_STATE = {};
 
 export default (state = INITIAL_STATE, action) => {
-	switch (action.type){
+	switch (action.type) {
 
 	case EMPLOYEE_FETCH_SUCCESS:
 		return action.payload;
